@@ -1,0 +1,59 @@
+<div class="popularWrapper">
+  <h2 class="popularWrapper__title">Popular on Netflix</h2>
+  <swiper
+    class="popularWrapper__title__swiperContainer"
+    [loop]="true"
+    [autoHeight]="true"
+    [allowTouchMove]="false"
+    [navigation]="true"
+    [slidesPerView]="6"
+  >
+    <ng-template swiperSlide
+      ><img
+        class="popularWrapper__title__swiperContainer__slide"
+        src="{{ image1 }}"
+        alt=""
+      />
+    </ng-template>
+    <ng-template swiperSlide>
+      <img
+        class="popularWrapper__title__swiperContainer__slide"
+        src="{{ image2 }}"
+        alt=""
+      />
+    </ng-template>
+    <ng-template swiperSlide
+      ><img
+        class="popularWrapper__title__swiperContainer__slide"
+        src="{{ image3 }}"
+        alt=""
+      />
+    </ng-template>
+    <ng-template swiperSlide
+      ><img
+        class="popularWrapper__title__swiperContainer__slide"
+        src="{{ image4 }}"
+        alt=""
+      />
+    </ng-template>
+    <ng-template swiperSlide
+      ><img
+        class="popularWrapper__title__swiperContainer__slide"
+        src="{{ image5 }}"
+        alt=""
+      />
+    </ng-template>
+    <ng-template swiperSlide
+      ><img
+        class="popularWrapper__title__swiperContainer__slide"
+        src="{{ image6 }}"
+        alt=""
+    /></ng-template>
+    <ng-template swiperSlide>
+      <img
+        class="popularWrapper__title__swiperContainer__slide"
+        src="{{ image7 }}"
+        alt=""
+    /></ng-template>
+  </swiper>
+</div>
