@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core'
+import { Videos } from '../../api/videos'
+import { VideosService } from '../../api/VideosHttpRequest'
 
 @Component({
   selector: 'app-home-page',
@@ -6,7 +8,13 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent implements OnInit {
-  constructor() {}
+  constructor(private VideosService: VideosService) {}
 
-  ngOnInit(): void {}
+  videosList: Videos[]
+
+  ngOnInit(): void {
+    this.VideosService.getVideosList().subscribe(
+      (videosList) => (this.videosList = videosList)
+    )
+  }
 }

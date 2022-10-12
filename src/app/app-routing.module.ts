@@ -7,7 +7,8 @@ import { AuthPageComponent } from './auth/auth-page/auth-page.component'
 const routes: Routes = [
   { path: 'authentication', component: AuthPageComponent },
   { path: 'home', component: HomePageComponent },
-  { path: '', redirectTo: 'authentication', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  // {path: '**', component: 'NotExistPageComponent'}, // Component didn't exist for now
 ]
 
 @NgModule({

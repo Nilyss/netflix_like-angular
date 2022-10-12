@@ -6,12 +6,6 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./home-nav.component.scss'],
 })
 export class HomeNavComponent implements OnInit {
-  // Toggle for the search bar input and style on toggle
-  isShowSearchBar = false
-  toggleDisplaySearchBar() {
-    this.isShowSearchBar = !this.isShowSearchBar
-  }
-
   constructor() {}
 
   ngOnInit(): void {}
