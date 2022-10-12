@@ -55,5 +55,12 @@
         src="{{ image7 }}"
         alt=""
     /></ng-template>
+    <ng-template swiperSlide *ngFor='let video of videoList'>
+      <img
+        (click)='gotToVideo(video)'
+        class="popularWrapper__title__swiperContainer__slide"
+        src="{{ video.img }}"
+        alt=""
+      /></ng-template>
   </swiper>
 </div>

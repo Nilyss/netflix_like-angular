@@ -12,6 +12,8 @@ export class HomeNavComponent implements OnInit {
     this.isShowSearchBar = !this.isShowSearchBar
   }
 
+  // search input
+
   constructor() {}
 
   ngOnInit(): void {}

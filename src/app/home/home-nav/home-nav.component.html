@@ -41,13 +41,16 @@
           >
             search
           </p>
+          <label for='searchForVideos'></label>
           <input
-            [ngClass]="isShowSearchBar === false ?
-            'homeHeader__nav__ul__li__searchForm__input--false' :
-            'homeHeader__nav__ul__li__searchForm__input--true'
-"
+            [ngClass]="
+              isShowSearchBar === false
+                ? 'homeHeader__nav__ul__li__searchForm__input--false'
+                : 'homeHeader__nav__ul__li__searchForm__input--true'
+            "
             type="text"
             name="searchForVideos"
+            id='searchForVideos'
             placeholder="Title, Person, Type"
           />
         </form>

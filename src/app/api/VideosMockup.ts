@@ -1,4 +1,4 @@
-export class Videos {
+export class VideosMockup {
   id: number
   imdb_id: string
   img: string
