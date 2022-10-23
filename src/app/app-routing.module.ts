@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: 'authentication', component: AuthPageComponent },
   { path: 'home', component: HomePageComponent },
   { path: `shows/:id`, component: ShowPageComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'authentication', pathMatch: 'full' },
   // {path: '**', component: 'NotExistPageComponent'}, // Component didn't exist for now
 ]
 
