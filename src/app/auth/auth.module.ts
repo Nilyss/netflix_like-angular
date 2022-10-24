@@ -11,7 +11,8 @@ import { AuthHeaderComponent } from './auth-header/auth-header.component'
 import { FirstCardComponent } from './first-card/first-card.component'
 import { SecondCardComponent } from './second-card/second-card.component'
 import { ThirdCardComponent } from './third-card/third-card.component';
-import { FourthCardComponent } from './fourth-card/fourth-card.component'
+import { FourthCardComponent } from './fourth-card/fourth-card.component';
+import { FifthCardComponent } from './fifth-card/fifth-card.component'
 
 // libraries
 
@@ -23,6 +24,7 @@ import { FourthCardComponent } from './fourth-card/fourth-card.component'
     SecondCardComponent,
     ThirdCardComponent,
     FourthCardComponent,
+    FifthCardComponent,
   ],
   imports: [CommonModule, AppRoutingModule, RouterOutlet],
 })
