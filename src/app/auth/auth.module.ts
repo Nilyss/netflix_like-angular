@@ -12,7 +12,9 @@ import { FirstCardComponent } from './first-card/first-card.component'
 import { SecondCardComponent } from './second-card/second-card.component'
 import { ThirdCardComponent } from './third-card/third-card.component';
 import { FourthCardComponent } from './fourth-card/fourth-card.component';
-import { FifthCardComponent } from './fifth-card/fifth-card.component'
+import { FifthCardComponent } from './fifth-card/fifth-card.component';
+import { SixthCardComponent } from './sixth-card/sixth-card.component';
+import { AuthFooterComponent } from './auth-footer/auth-footer.component'
 
 // libraries
 
@@ -25,6 +27,8 @@ import { FifthCardComponent } from './fifth-card/fifth-card.component'
     ThirdCardComponent,
     FourthCardComponent,
     FifthCardComponent,
+    SixthCardComponent,
+    AuthFooterComponent,
   ],
   imports: [CommonModule, AppRoutingModule, RouterOutlet],
 })
