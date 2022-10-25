@@ -33,13 +33,14 @@
   justify-content: space-between;
   list-style: none;
   font-size: 1.5em;
+  overflow: hidden;
 }
 
 .sixthCardWrapper__card__nav__ul__li__subtitle {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.1em;
-  padding: .8em;
+  padding: 0.8em;
   background: #303030;
   cursor: pointer;
 }
@@ -48,17 +49,32 @@
 }
 
 .sixthCardWrapper__card__nav__ul__li__subtile__toggleOpen {
-  //display: none;
   font-size: 1.5em;
 }
 
 .sixthCardWrapper__card__nav__ul__li__subtile__toggleClose {
-  display: none;
   font-size: 1.5em;
 }
 
-.sixthCardWrapper__card__nav__ul__li__description {
-  display: none;
+.sixthCardWrapper__card__nav__ul__li__description--closed {
+  max-height: 0;
+  opacity: 0;
   background: #303030;
-  padding: 1em;
+  overflow: hidden;
+  transition: max-height 100ms ease-out, opacity 0ms, padding 10ms;
+}
+
+.sixthCardWrapper__card__nav__ul__li__description--open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 500px;
+  background: #303030;
+  overflow: hidden;
+  transition: all 100ms ease-out, opacity 0ms, padding 10ms;
+}
+
+.sixthCardWrapper__card__nav__ul__li__description__message {
+  width: 90%;
+  margin: 1em 0 1em 0;
 }

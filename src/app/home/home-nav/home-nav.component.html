@@ -1,6 +1,8 @@
 <header class="homeHeader">
   <figure class="homeHeader__fig">
-    <img class="homeHeader__fig__img" src="{{ logo }}" alt="logo" />
+    <img
+      (click)='goToAuth()'
+      class="homeHeader__fig__img" src="{{ logo }}" alt="logo" />
   </figure>
   <nav class="homeHeader__nav">
     <ul class="homeHeader__nav__ul homeHeader__nav__ul--left">
