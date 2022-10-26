@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core'
+import { Question } from '../question'
+import { QUESTIONS } from '../mock-question'
 
 @Component({
   selector: 'app-sixth-card',
@@ -6,20 +8,22 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./sixth-card.component.scss'],
 })
 export class SixthCardComponent implements OnInit {
+  Questions: Question[] = QUESTIONS
+
   constructor() {}
 
   ngOnInit(): void {}
 
-  isHidden = [false, false, false, false, false, false]
+  isDisplay = [true]
 
-  toggleQuestion(index: number) {
-    this.isHidden[index] = !this.isHidden[index]
-    if (this.isHidden) {
-      this.isHidden.filter((e, eIndex) => {
-        if (eIndex !== index) {
-          this.isHidden[eIndex] = false
-        }
-      })
-    }
+  setDisplay(id: number) {
+    this.Questions.forEach((el) => {
+      if (el.id === id) {
+        this.isDisplay[id] = !this.isDisplay[id]
+      }
+      if (el.id !== id) {
+        this.isDisplay[el.id] = false
+      }
+    })
   }
 }
