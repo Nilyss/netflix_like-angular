@@ -1,0 +1,31 @@
+<section class="show">
+  <article class="showHeader" *ngIf="video">
+    <figure class="showHeader__poster">
+      <img
+        class="showHeader__poster__img"
+        src="{{ video.poster }}"
+        alt="poster"
+      />
+    </figure>
+    <div class="showHeader__title">
+      <figure class="showHeader__title__fig">
+        <img
+          class="showHeader__title__fig__img"
+          src="../../../assets/logos/new.png"
+          alt="netflix logo"
+        />
+      </figure>
+      <p class="showHeader__title__type">series</p>
+    </div>
+    <h2 class="showHeader__showTitle">{{ video.title }}</h2>
+    <div class="showHeader__infos">
+      <p class="showHeader__infos__release">
+        Initial Release Date : {{ video.title_date }}
+      </p>
+      <p class='"showHeader__infos__release"'>
+        Rating: {{video.rating}}
+      </p>
+    </div>
+    <p class="showHeader__synopsis">Synopsis: {{ video.synopsis }}</p>
+  </article>
+</section>

@@ -1,0 +1,58 @@
+// ***** Section *****
+.show {
+  width: 50%;
+  margin: auto;
+  background: #181818;
+}
+
+// ***** Article *****
+.showHeader {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  color: #f2f2f2;
+  padding: 2em;
+}
+
+.showHeader__poster {
+  margin: auto;
+}
+
+.showHeader__poster__img {}
+
+.showHeader__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.showHeader__title__fig {
+  width: 1em;
+}
+
+.showHeader__title__fig__img {
+  width: 100%;
+}
+
+.showHeader__title__type {
+  text-transform: uppercase;
+}
+
+.showHeader__showTitle {
+  margin-top: -0.35em;
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.showHeader__infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.showHeader__infos__release {
+
+}
+
+.showHeader__synopsis {
+margin-top: 2em;
+}
