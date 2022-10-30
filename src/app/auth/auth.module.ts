@@ -14,9 +14,10 @@ import { ThirdCardComponent } from './third-card/third-card.component'
 import { FourthCardComponent } from './fourth-card/fourth-card.component'
 import { FifthCardComponent } from './fifth-card/fifth-card.component'
 import { SixthCardComponent } from './sixth-card/sixth-card.component'
-import { AuthFooterComponent } from './auth-footer/auth-footer.component';
-import { AuthLoginComponent } from './auth-login/auth-login.component';
+import { AuthFooterComponent } from './auth-footer/auth-footer.component'
+import { AuthLoginComponent } from './auth-login/auth-login.component'
 import { AuthFormComponent } from './auth-form/auth-form.component'
+import { FormsModule } from '@angular/forms'
 
 // libraries
 
@@ -34,6 +35,6 @@ import { AuthFormComponent } from './auth-form/auth-form.component'
     AuthLoginComponent,
     AuthFormComponent,
   ],
-  imports: [CommonModule, AppRoutingModule, RouterOutlet],
+  imports: [CommonModule, AppRoutingModule, RouterOutlet, FormsModule],
 })
 export class AuthModule {}

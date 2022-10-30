@@ -1,11 +1,22 @@
 <body class="authLogin">
-<app-auth-header></app-auth-header>
+<figure class='authLogin__fig'>
+  <img
+    class='authLogin__fig__background'
+    src='{{background}}' alt='background'/>
+</figure>
+<header class='authLogin__header'>
+  <figure class="authLogin__header__fig">
+    <img
+      (click)='goToHome()'
+      class="authLogin__header__fig__logo" src="{{ logo }}" alt="netflix logo" />
+  </figure>
+</header>
 <main>
   <section>
     <article>
+      <app-auth-form></app-auth-form>
     </article>
   </section>
 </main>
-<app-auth-footer></app-auth-footer>
 </body>
 <router-outlet></router-outlet>
