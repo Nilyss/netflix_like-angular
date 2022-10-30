@@ -2,15 +2,13 @@ import { Injectable } from '@angular/core'
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { catchError, Observable, of, tap } from 'rxjs'
 import { Videos } from './videos'
+import { environment } from '../../environments/environment'
 
 @Injectable()
 export class VideosService {
   constructor(private http: HttpClient) {}
 
-  headers = new HttpHeaders().set(
-    'X-RapidAPI-Key',
-    '6efd648ce3msh9aa21935d50c4d3p14c044jsnb316ecdeb069'
-  )
+  headers = new HttpHeaders().set(environment.API_CONFIG, environment.API_KEY)
 
   getVideosList(): Observable<Videos[]> {
     return this.http
